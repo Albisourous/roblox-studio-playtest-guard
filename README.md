@@ -7,6 +7,11 @@ An agent skill for testing Roblox experiences in Studio. Before an agent reports
 
 It works with any Roblox experience and any sync setup (Rojo, Argon, or plain Studio edits). The checks use Roblox's built-in Studio MCP server, but the steps also work by hand from the command bar.
 
+## Requirements
+
+- Roblox Studio. For agent use, turn on Assistant, Manage MCP Servers, "Enable Studio as MCP server".
+- Python 3.8 or newer for `fingerprint.py`.
+
 ## What's in it
 
 ```
@@ -51,7 +56,17 @@ If a script you changed has a different length or hash in Play, the playtest is 
 
 ## Contributing
 
+Run the checks before you open a pull request. The parity test needs the [Luau CLI](https://github.com/luau-lang/luau/releases) on your PATH, or its path in `LUAU`:
+
+```sh
+python3 -m unittest discover -s tests -v
+stylua --check skills
+selene skills
+```
+
 Open an issue if you find another case where Studio reports one state and runs another. Include the steps to reproduce it.
+
+Release notes are in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

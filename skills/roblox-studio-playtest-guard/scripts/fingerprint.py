@@ -7,6 +7,8 @@ with the Source Studio has loaded. CRLF is read as LF on both sides.
 Usage: fingerprint.py FILE [FILE ...]
 """
 
+from __future__ import annotations
+
 import sys
 
 
