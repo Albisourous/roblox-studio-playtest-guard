@@ -1,12 +1,16 @@
 {
-  "name": "roball-studio-runtime-identity",
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "roblox-studio-playtest-guard",
   "owner": { "name": "Albin Shrestha", "url": "https://github.com/Albisourous" },
+  "description": "Install the Roblox Studio playtest guard as a Claude Code plugin.",
   "plugins": [
     {
-      "name": "roball-studio-runtime-identity",
+      "name": "roblox-studio-playtest-guard",
       "source": "./",
-      "description": "Guard RoBall3D Studio tests against mismatched runtime source and misleading stop acknowledgments.",
-      "version": "1.0.0"
+      "description": "Check that a Roblox Studio playtest runs your current scripts and has actually stopped before you trust its results.",
+      "version": "1.1.0",
+      "license": "MIT",
+      "keywords": ["roblox", "roblox-studio", "mcp", "playtest", "luau"]
     }
   ]
 }
