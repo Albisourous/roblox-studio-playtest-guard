@@ -1,0 +1,12 @@
+{
+  "name": "roball-studio-runtime-identity",
+  "owner": { "name": "Albin Shrestha", "url": "https://github.com/Albisourous" },
+  "plugins": [
+    {
+      "name": "roball-studio-runtime-identity",
+      "source": "./",
+      "description": "Guard RoBall3D Studio tests against mismatched runtime source and misleading stop acknowledgments.",
+      "version": "1.0.0"
+    }
+  ]
+}

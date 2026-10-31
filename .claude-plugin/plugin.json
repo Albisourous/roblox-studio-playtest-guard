@@ -1,0 +1,8 @@
+{
+  "name": "roball-studio-runtime-identity",
+  "description": "Guard RoBall3D Studio tests against mismatched runtime source and misleading stop acknowledgments.",
+  "version": "1.0.0",
+  "author": { "name": "Albin Shrestha", "url": "https://github.com/Albisourous" },
+  "repository": "https://github.com/Albisourous/roball-studio-runtime-identity",
+  "license": "MIT"
+}
